@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+* {   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #59677A, #3E4247);
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 50px #101d319a;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+    color: #4A86E1;
+    text-align: center;
+    text-shadow: 1px 1px 2px #3d6eb8;
+}
+
+h2 {
+    color: #59677A;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Centraliza o link que é filho direto do body (o "Voltar" em cor03.html) */
+body > a {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 5px #00000050;
+    width: 80px;
+    border-radius: 10px;
+    background-color: #3d6eb8;
+    color: whitesmoke;
+
+}
+
+:hover >a {
+    background-color: #2e4a7a;
+    box-shadow: 3px 3px 7px #00000080;
+    transition: 0.3s;
+}
+
+:focus >a {
+    outline: none;
+    box-shadow: 0 0 5px 2px #3d6eb8;
+    transition: 0.3s;
+}
