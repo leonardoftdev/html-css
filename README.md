@@ -1,4 +1,3 @@
-# html-css
 
 # 🌐 Curso de HTML5 e CSS3
 
@@ -52,4 +51,4 @@ Durante o curso, aprendi a:
 
 ---
 
-Feito por **[Leonardo](https://github.com/leonardoftdev)** 
+Feito por **[@leonardoftdev](https://github.com/leonardoftdev)** 
