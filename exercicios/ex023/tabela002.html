@@ -9,6 +9,13 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.5em;
+            background-color: lightgray;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
@@ -24,7 +31,7 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(49, 49, 49);
             color: white;
         }
     </style>
@@ -33,18 +40,25 @@
     <h1>Uso de Tabelas Grandes</h1>
     <!-- ANATOMIA DE TABELAS GRANDES
         TABLE
+            CAPTION 
             THEAD = Table Head (Cabeçalho da Tabela)
                 TR, TD, TH
             TBODY = Table Body (Corpo da Tabela)
                 TR, TD, TH
             TFOOT = Table Foot (Rodapé da Tabela)
                 TR, TD, TH
+
+         Importante colocar o "scope" a fim de Semântica do Site nos "th"
+
+         col = coluna
+         row = linha
     -->
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -159,7 +173,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>213 421 037</strong></td>
             </tr>
         </tfoot>
